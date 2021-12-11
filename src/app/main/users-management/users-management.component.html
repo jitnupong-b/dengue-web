@@ -1,0 +1,83 @@
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 p-r-0 title-margin-right">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h1>{{ appName }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-4 p-l-0 title-margin-left">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#"><i class="ti-home"></i> หน้าแรก</a>
+                                </li>
+                                <li class="breadcrumb-item active">{{ pageName }}</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+            <div id="main-content">
+                <div class="row">
+                    <div class="col-lg-8 offset-2">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#home"
+                                            role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span
+                                                class="hidden-xs-down">ผู้ใช้ส่วนกลาง</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#support2"
+                                            role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span
+                                                class="hidden-xs-down">ผู้ใช้ระดับสสจ.</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile"
+                                            role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span
+                                                class="hidden-xs-down">ผู้ใช้ระดับสสอ.</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages"
+                                            role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span
+                                                class="hidden-xs-down">ผู้ใช้ระดับ รพ. รพสต. อปท.</span></a> </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content tabcontent-border">
+                                    <div class="tab-pane active" id="home" role="tabpanel">
+                                        <div class="p-20">
+                                            <table datatable [dtOptions]="dtSupporter3Options" class="row-border hover">
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane p-20" id="support2" role="tabpanel">
+                                        <div class="p-20">
+                                            <table datatable [dtOptions]="dtSupporter2Options" class="row-border hover">
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane p-20" id="profile" role="tabpanel">
+                                        <div class="p-20">
+                                            <table datatable [dtOptions]="dtSupporter1Options" class="row-border hover">
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane p-20" id="messages" role="tabpanel">
+                                        <div class="p-20">
+                                            <table datatable [dtOptions]="dtOperatorOptions" class="row-border hover">
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  appName: 'ระบบจัดการ Dengue Manager App.', 
+  production: true,
+  apiUrl: '/api'
 };

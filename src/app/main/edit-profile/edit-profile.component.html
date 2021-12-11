@@ -1,0 +1,122 @@
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 p-r-0 title-margin-right">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h1>{{ appName }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-4 p-l-0 title-margin-left">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#"><i class="ti-home"></i> หน้าแรก</a>
+                                </li>
+                                <li class="breadcrumb-item active">{{ pageName }}</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+            <div id="main-content">
+                <div class="row">
+                    <div class="col-lg-8 offset-2">
+                        <div class="card">
+                            <div class="card-header">
+                                แก้ไขข้อมูลส่วนบุคคล
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="FirstName">ชื่อ</label>
+                                            <input type="text" class="form-control" [(ngModel)]="FirstName"
+                                                name="FirstName">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="LastName">นามสกุล</label>
+                                            <input type="text" class="form-control" [(ngModel)]="LastName"
+                                                name="LastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="number">เบอร์โทรศัพท์</label>
+                                            <input type="text" class="form-control" [(ngModel)]="number" name="number">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="Gender">เพศ</label>
+                                            <select class="form-control" name="Gender" [(ngModel)]="Gender">
+                                                <option selected>กรุณาเลือก</option>
+                                                <option value="M">ชาย</option>
+                                                <option value="F">หญิง</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="Gender">ประเภทผู้ใช้งาน</label>
+                                            <select class="form-control" name="">
+                                                <option selected>กรุณาเลือก</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="Gender">สังกัด</label>
+                                            <select class="form-control" name="">
+                                                <option selected>กรุณาเลือก</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                ข้อมูลอีเมล์และรหัสผ่าน
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="">ชื่อผู้ใช้ (อีเมล์)</label>
+                                                    <input type="text" class="form-control" name="Email" [(ngModel)]="Email">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputAddress2">ยืนยันอีเมล์</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputAddress2">รหัสผ่านเก่า</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputAddress2">รหัสผ่านใหม่</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputAddress2">ยืนยันรหัสผ่านใหม่</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

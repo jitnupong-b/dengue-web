@@ -1,0 +1,48 @@
+<div class="bg-dark-gray">
+    <div class="unix-login">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="login-content">
+                        <div class="login-logo"><img src="assets/images/ddc-logo-medium.png" class="mx-auto d-block" />
+                        </div>
+                        <div class="login-form">
+                            <h4>ระบบจัดการ Dengue Manager Application<br /><small>กรุณาเข้าสู่ระบบก่อนการใช้งาน</small>
+                            </h4>
+                            <form (ngSubmit)="loginProcess()" [formGroup]="formGroup">
+                                <div class="form-group">
+                                    <label><i class="ti-user"></i>&nbsp;ชื่อผู้ใช้งาน</label>
+                                    <input type="email" class="form-control" placeholder="ชื่อผู้ใช้งาน" formControlName="email">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="ti-key"></i>&nbsp;รหัสผ่าน</label>
+                                    <input type="password" class="form-control" placeholder="รหัสผ่าน" formControlName="password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> จำฉันไว้
+                                    </label>
+                                    <label class="pull-right">
+                                        <a href="#">ลืมรหัสผ่าน?</a>
+                                    </label>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-primary btn-flat m-b-30 m-t-30"><i class="ti-arrow-right"></i> เข้าสู่ระบบ</button>
+                                <!--<div class="social-login-content">
+                                <div class="social-button">
+                                    <button type="button" class="btn btn-primary bg-facebook btn-flat btn-addon m-b-10"><i class="ti-facebook"></i>Sign in with facebook</button>
+                                    <button type="button" class="btn btn-primary bg-twitter btn-flat btn-addon m-t-10"><i class="ti-twitter"></i>Sign in with twitter</button>
+                                </div>
+                            </div>-->
+                                <div class="register-link m-t-15 text-center">
+                                    หากท่านยังไม่มีบัญชีผู้ใช้ กรุณาติดต่อผู้ดูแลระบบ <a href="#">
+                                        admin@odpc6-dengue-manager.com</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
